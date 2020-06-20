@@ -96,11 +96,6 @@
 		logical_models 	(list unit_reference_list
 		    (object Class_Category "Actors"
 			quid       	"3518CBC9026C"
-			documentation 	
-|All Actors in the system are contained in this package.   This is both as a way to organize the model, making it easier to understand, and to provide a way to manage the actors in a single configuration item. 
-|
-|If different individuals are responsible for different actors and their related artifacts, the actors should be organized into their own packages and placed under separate configuration control.
-			
 			exportControl 	"Public"
 			logical_models 	(list unit_reference_list
 			    (object Class "学员"
@@ -1484,7 +1479,7 @@
 			    (object Class_Category "资源管理子系统"
 				is_unit    	TRUE
 				is_loaded  	FALSE
-				file_name  	"D:\\云迪在线网络学习平台\\01Development Library\\RD需求开发\\资源管理子系统.cat"
+				file_name  	"D:\\云迪在线网络学习平台\\01Development Library\\RD需求开发\\用例模型\\资源管理子系统.cat"
 				quid       	"5EEB22AD020D")
 			    (object Class_Category "知识管理子系统"
 				is_unit    	TRUE
@@ -1517,7 +1512,7 @@
 			    (object Class_Category "内容管理"
 				is_unit    	TRUE
 				is_loaded  	FALSE
-				file_name  	"D:\\2020实训\\20200618\\内容管理.cat"
+				file_name  	"D:\\云迪在线网络学习平台\\01Development Library\\RD需求开发\\用例模型\\内容管理.cat"
 				quid       	"5EEB23550031")
 			    (object Class_Category "频道栏目管理"
 				is_unit    	TRUE
@@ -1574,7 +1569,16 @@
 				quid       	"5EEDBF2A00C3"
 				exportControl 	"Public"
 				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list)))
+				logical_presentations 	(list unit_reference_list
+				    (object UseCaseDiagram "Main"
+					quid       	"5EEDC35402F4"
+					title      	"Main"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list)))))
 			logical_presentations 	(list unit_reference_list
 			    (object UseCaseDiagram "各子系统包图"
 				quid       	"5EEDAC1302B8"
@@ -2158,9 +2162,6 @@
 	    (object UseCaseDiagram "Main"
 		quid       	"35C6339B029F"
 		title      	"Main"
-		documentation 	
-|This diagram depicts the relationships between the packages (models) contained in the 'Use-Case View": the Use-Case Model (for the system) and the Business Use-Case Model (describing the business).
-		
 		zoom       	90
 		max_height 	28350
 		max_width  	21600
