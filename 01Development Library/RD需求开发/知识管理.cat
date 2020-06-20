@@ -1,0 +1,816 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "知识管理子系统"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EEB233B0189"
+    visible_categories 	(list visibility_relationship_list
+	(object Visibility_Relationship
+	    quid       	"5EEC79AC0069"
+	    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台"
+	    quidu      	"5EEACC3B0144"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Association "$UNNAMED$0"
+	    quid       	"5EEC826002C1"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"5EEC826101C7"
+		    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::上传知识"
+		    quidu      	"5EEC821602B3"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"5EEC826101C9"
+		    supplier   	"Use Case View::系统用例模型::Actors::管理员"
+		    quidu      	"5EEACB8D01E8")))
+	(object Association "$UNNAMED$3"
+	    quid       	"5EEC8327016E"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"5EEC832703C9"
+		    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::对知识进行管理"
+		    quidu      	"5EEC826D00C2"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$5"
+		    quid       	"5EEC832703CB"
+		    supplier   	"Use Case View::系统用例模型::Actors::管理员"
+		    quidu      	"5EEACB8D01E8")))
+	(object Class_Category "知识库管理"
+	    quid       	"5EEC837003C9"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "撤回知识"
+		    quid       	"5EEC83610084"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"5EEC839A016F"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::对知识进行管理"
+			    quidu      	"5EEC826D00C2")))
+		(object UseCase "上传知识"
+		    quid       	"5EEC821602B3"
+		    visible_modules 	(list dependency_list
+			(object Dependency_Relationship
+			    quid       	"5EEC82BD011B"
+			    stereotype 	"include"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::按照分类上传"
+			    quidu      	"5EEC82A10068")))
+		(object UseCase "录入业务知识"
+		    quid       	"5EEC823601F2"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"5EEC8258018F"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::上传知识"
+			    quidu      	"5EEC821602B3")))
+		(object UseCase "发布知识"
+		    quid       	"5EEC83560241"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"5EEC83950299"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::对知识进行管理"
+			    quidu      	"5EEC826D00C2")))
+		(object UseCase "对知识进行管理"
+		    quid       	"5EEC826D00C2")
+		(object UseCase "按照分类上传"
+		    quid       	"5EEC82A10068")
+		(object UseCase "删除知识"
+		    quid       	"5EEC836A0274"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"5EEC83A00175"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::对知识进行管理"
+			    quidu      	"5EEC826D00C2"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "知识库管理用例图"
+		    quid       	"5EEC81E6010D"
+		    title      	"知识库管理用例图"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::录入业务知识" @1
+			    location   	(736, 496)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(736, 634)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"录入业务知识")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC823601F2"
+			    height     	118)
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::上传知识" @2
+			    location   	(736, 192)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(736, 330)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"上传知识")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC821602B3"
+			    height     	118)
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::按照分类上传" @3
+			    location   	(1152, 384)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@3
+				location   	(1152, 522)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"按照分类上传")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC82A10068"
+			    height     	118)
+			(object InheritView "" @4
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC8258018F"
+			    client     	@1
+			    supplier   	@2
+			    vertices   	(list Points
+				(736, 496)
+				(736, 192))
+			    line_style 	0)
+			(object DependencyView "" @5
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @6
+				Parent_View 	@5
+				location   	(988, 187)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<include>>"
+				pctDist    	0.500000
+				height     	108
+				orientation 	0)
+			    line_color 	3342489
+			    quidu      	"5EEC82BD011B"
+			    client     	@2
+			    supplier   	@3
+			    vertices   	(list Points
+				(844, 238)
+				(1040, 330))
+			    line_style 	0)
+			(object ClassView "Class" "Use Case View::系统用例模型::Actors::管理员" @7
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(240, 512)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@7
+				location   	(240, 672)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	339
+				justify    	0
+				label      	"管理员")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5EEACB8D01E8"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$0" @8
+			    location   	(469, 359)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC826002C1"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$1" @9
+				    Parent_View 	@8
+				    location   	(133, -185)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EEC826101C7"
+				    client     	@8
+				    supplier   	@2
+				    vertices   	(list Points
+					(469, 359)
+					(642, 248))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$2" @10
+				    Parent_View 	@8
+				    location   	(133, -185)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EEC826101C9"
+				    client     	@8
+				    supplier   	@7
+				    vertices   	(list Points
+					(469, 359)
+					(297, 471))
+				    line_style 	0)))
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::对知识进行管理" @11
+			    location   	(720, 832)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@11
+				location   	(720, 970)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"对知识进行管理")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC826D00C2"
+			    height     	118)
+			(object AssociationViewNew "$UNNAMED$3" @12
+			    location   	(463, 661)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC8327016E"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$4" @13
+				    Parent_View 	@12
+				    location   	(223, 149)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EEC832703C9"
+				    client     	@12
+				    supplier   	@11
+				    vertices   	(list Points
+					(463, 661)
+					(630, 772))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$5" @14
+				    Parent_View 	@12
+				    location   	(223, 149)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EEC832703CB"
+				    client     	@12
+				    supplier   	@7
+				    vertices   	(list Points
+					(463, 661)
+					(297, 550))
+				    line_style 	0)))
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::发布知识" @15
+			    location   	(352, 1008)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@15
+				location   	(352, 1146)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"发布知识")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC83560241"
+			    height     	118)
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::撤回知识" @16
+			    location   	(720, 1216)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@16
+				location   	(720, 1354)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"撤回知识")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC83610084"
+			    height     	118)
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::知识库管理::删除知识" @17
+			    location   	(1056, 1024)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@17
+				location   	(1056, 1162)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"删除知识")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC836A0274"
+			    height     	118)
+			(object InheritView "" @18
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC83950299"
+			    client     	@15
+			    supplier   	@11
+			    vertices   	(list Points
+				(460, 952)
+				(583, 896))
+			    line_style 	0)
+			(object InheritView "" @19
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC839A016F"
+			    client     	@16
+			    supplier   	@11
+			    vertices   	(list Points
+				(720, 1158)
+				(720, 1037))
+			    line_style 	0)
+			(object InheritView "" @20
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC83A00175"
+			    client     	@17
+			    supplier   	@11
+			    vertices   	(list Points
+				(957, 966)
+				(856, 907))
+			    line_style 	0)))))
+	(object Class_Category "学员学习知识"
+	    quid       	"5EEC83AF02CF"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "查看知识"
+		    quid       	"5EEC86410060"
+		    visible_modules 	(list dependency_list
+			(object Dependency_Relationship
+			    quid       	"5EEC87320210"
+			    stereotype 	"extend"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::发表学习收获和感言"
+			    quidu      	"5EEC86BF02E3")))
+		(object UseCase "查看所有知识"
+		    quid       	"5EEC8688022F"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"5EEC86B10250"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::查看知识"
+			    quidu      	"5EEC86410060")))
+		(object UseCase "通过关键字搜索知识"
+		    quid       	"5EEC868A0024"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"5EEC86B90284"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::查看知识"
+			    quidu      	"5EEC86410060")))
+		(object UseCase "发表学习收获和感言"
+		    quid       	"5EEC86BF02E3")
+		(object UseCase "学习知识"
+		    quid       	"5EEC87550113"
+		    visible_modules 	(list dependency_list
+			(object Dependency_Relationship
+			    quid       	"5EEC8765006E"
+			    stereotype 	"extend"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::发表学习收获和感言"
+			    quidu      	"5EEC86BF02E3")))
+		(object Association "$UNNAMED$6"
+		    quid       	"5EEC865802E2"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$7"
+			    quid       	"5EEC86590094"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::查看知识"
+			    quidu      	"5EEC86410060"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$8"
+			    quid       	"5EEC86590096"
+			    supplier   	"Use Case View::系统用例模型::Actors::学员"
+			    quidu      	"5EEACB7B02DA")))
+		(object Association "$UNNAMED$9"
+		    quid       	"5EEC86CE03DE"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$10"
+			    quid       	"5EEC86CF0279"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::发表学习收获和感言"
+			    quidu      	"5EEC86BF02E3"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$11"
+			    quid       	"5EEC86CF027D"
+			    supplier   	"Use Case View::系统用例模型::Actors::学员"
+			    quidu      	"5EEACB7B02DA")))
+		(object Association "$UNNAMED$12"
+		    quid       	"5EEC875E035E"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$13"
+			    quid       	"5EEC875F0202"
+			    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::学习知识"
+			    quidu      	"5EEC87550113"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$14"
+			    quid       	"5EEC875F0204"
+			    supplier   	"Use Case View::系统用例模型::Actors::学员"
+			    quidu      	"5EEACB7B02DA"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "学员学习知识用例图"
+		    quid       	"5EEC83C0032E"
+		    title      	"学员学习知识用例图"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::查看知识" @21
+			    location   	(912, 336)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@21
+				location   	(912, 474)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"查看知识")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC86410060"
+			    height     	118)
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::查看所有知识" @22
+			    location   	(1360, 192)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@22
+				location   	(1360, 330)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"查看所有知识")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC8688022F"
+			    height     	118)
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::通过关键字搜索知识" @23
+			    location   	(1344, 560)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@23
+				location   	(1344, 698)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"通过关键字搜索知识")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC868A0024"
+			    height     	118)
+			(object InheritView "" @24
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC86B10250"
+			    client     	@22
+			    supplier   	@21
+			    vertices   	(list Points
+				(1250, 224)
+				(1020, 297))
+			    line_style 	0)
+			(object InheritView "" @25
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC86B90284"
+			    client     	@23
+			    supplier   	@21
+			    vertices   	(list Points
+				(1235, 502)
+				(1020, 390))
+			    line_style 	0)
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::发表学习收获和感言" @26
+			    location   	(944, 1056)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@26
+				location   	(944, 1194)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"发表学习收获和感言")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC86BF02E3"
+			    height     	118)
+			(object ClassView "Class" "Use Case View::系统用例模型::Actors::学员" @27
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(432, 576)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@27
+				location   	(432, 736)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	339
+				justify    	0
+				label      	"学员")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5EEACB7B02DA"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$6" @28
+			    location   	(645, 465)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC865802E2"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$7" @29
+				    Parent_View 	@28
+				    location   	(213, -111)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EEC86590094"
+				    client     	@28
+				    supplier   	@21
+				    vertices   	(list Points
+					(645, 465)
+					(801, 386))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$8" @30
+				    Parent_View 	@28
+				    location   	(213, -111)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EEC86590096"
+				    client     	@28
+				    supplier   	@27
+				    vertices   	(list Points
+					(645, 465)
+					(489, 544))
+				    line_style 	0)))
+			(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::知识管理子系统::学员学习知识::学习知识" @31
+			    location   	(944, 704)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@31
+				location   	(944, 842)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"学习知识")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEC87550113"
+			    height     	118)
+			(object AssociationViewNew "$UNNAMED$12" @32
+			    location   	(661, 630)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC875E035E"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$13" @33
+				    Parent_View 	@32
+				    location   	(229, 54)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EEC875F0202"
+				    client     	@32
+				    supplier   	@31
+				    vertices   	(list Points
+					(661, 630)
+					(833, 673))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$14" @34
+				    Parent_View 	@32
+				    location   	(229, 54)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EEC875F0204"
+				    client     	@32
+				    supplier   	@27
+				    vertices   	(list Points
+					(661, 630)
+					(489, 588))
+				    line_style 	0)))
+			(object DependencyView "" @35
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @36
+				Parent_View 	@35
+				location   	(1052, 931)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<extend>>"
+				pctDist    	0.500000
+				height     	108
+				orientation 	0)
+			    line_color 	3342489
+			    quidu      	"5EEC8765006E"
+			    client     	@31
+			    supplier   	@26
+			    vertices   	(list Points
+				(944, 865)
+				(944, 997))
+			    line_style 	0))))))
+    logical_presentations 	(list unit_reference_list))

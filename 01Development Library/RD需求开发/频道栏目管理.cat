@@ -1,0 +1,255 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "频道栏目管理"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EEB23640030"
+    visible_categories 	(list visibility_relationship_list
+	(object Visibility_Relationship
+	    quid       	"5EEC8CFB0074"
+	    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::内容管理"
+	    quidu      	"5EEB23550031"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object UseCase "频道栏目管理"
+	    quid       	"5EEC8A360399")
+	(object UseCase "增加频道栏目"
+	    quid       	"5EEC8A4400B4"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"5EEC8B20001C"
+		    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::频道栏目管理::频道栏目管理"
+		    quidu      	"5EEC8A360399")))
+	(object UseCase "删除频道栏目"
+	    quid       	"5EEC8A450266"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"5EEC8B21035E"
+		    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::频道栏目管理::频道栏目管理"
+		    quidu      	"5EEC8A360399")))
+	(object UseCase "修改频道栏目"
+	    quid       	"5EEC8A470053"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"5EEC8B1D0395"
+		    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::频道栏目管理::频道栏目管理"
+		    quidu      	"5EEC8A360399")))
+	(object Association "$UNNAMED$0"
+	    quid       	"5EEC8A3E038A"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"5EEC8A3F029C"
+		    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::频道栏目管理::频道栏目管理"
+		    quidu      	"5EEC8A360399"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"5EEC8A3F02A0"
+		    supplier   	"Use Case View::系统用例模型::Actors::管理员"
+		    quidu      	"5EEACB8D01E8"))))
+    logical_presentations 	(list unit_reference_list
+	(object UseCaseDiagram "频道栏目管理用例图"
+	    quid       	"5EEC88BE003F"
+	    title      	"频道栏目管理用例图"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Use Case View::系统用例模型::Actors::管理员" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(544, 560)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(544, 720)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	335
+			justify    	0
+			label      	"管理员")
+		    icon       	"Actor"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    quidu      	"5EEACB8D01E8"
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::频道栏目管理::频道栏目管理" @2
+		    location   	(1008, 560)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1008, 698)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	630
+			justify    	0
+			label      	"频道栏目管理")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEC8A360399"
+		    height     	118)
+		(object AssociationViewNew "$UNNAMED$0" @3
+		    location   	(749, 560)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EEC8A3E038A"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @4
+			    Parent_View 	@3
+			    location   	(205, 16)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC8A3F029C"
+			    client     	@3
+			    supplier   	@2
+			    vertices   	(list Points
+				(749, 560)
+				(898, 560))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$2" @5
+			    Parent_View 	@3
+			    location   	(205, 16)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EEC8A3F02A0"
+			    client     	@3
+			    supplier   	@1
+			    vertices   	(list Points
+				(749, 560)
+				(601, 560))
+			    line_style 	0)))
+		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::频道栏目管理::增加频道栏目" @6
+		    location   	(1008, 880)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@6
+			location   	(1008, 1018)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	630
+			justify    	0
+			label      	"增加频道栏目")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEC8A4400B4"
+		    height     	118)
+		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::频道栏目管理::删除频道栏目" @7
+		    location   	(1008, 208)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@7
+			location   	(1008, 346)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	630
+			justify    	0
+			label      	"删除频道栏目")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEC8A450266"
+		    height     	118)
+		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::频道栏目管理::修改频道栏目" @8
+		    location   	(1456, 560)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@8
+			location   	(1456, 698)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	630
+			justify    	0
+			label      	"修改频道栏目")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEC8A470053"
+		    height     	118)
+		(object InheritView "" @9
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EEC8B1D0395"
+		    client     	@8
+		    supplier   	@2
+		    vertices   	(list Points
+			(1346, 560)
+			(1116, 560))
+		    line_style 	0)
+		(object InheritView "" @10
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EEC8B20001C"
+		    client     	@6
+		    supplier   	@2
+		    vertices   	(list Points
+			(1008, 820)
+			(1008, 721))
+		    line_style 	0)
+		(object InheritView "" @11
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EEC8B21035E"
+		    client     	@7
+		    supplier   	@2
+		    vertices   	(list Points
+			(1008, 369)
+			(1008, 501))
+		    line_style 	0)))))
