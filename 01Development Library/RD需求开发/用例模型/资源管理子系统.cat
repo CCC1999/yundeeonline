@@ -20,7 +20,7 @@
 	    roles      	(list role_list
 		(object Role "$UNNAMED$1"
 		    quid       	"5EEDBD77022C"
-		    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::授课讲师管理::修改 实训师资"
+		    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::授课讲师管理::修改实训师资"
 		    quidu      	"5EEDBCDB01E6"
 		    is_navigable 	TRUE)
 		(object Role "$UNNAMED$2"
@@ -107,7 +107,7 @@
 	    quid       	"5EEDB7AE03AD"
 	    exportControl 	"Public"
 	    logical_models 	(list unit_reference_list
-		(object UseCase "修改 实训师资"
+		(object UseCase "修改实训师资"
 		    quid       	"5EEDBCDB01E6"
 		    superclasses 	(list inheritance_relationship_list
 			(object Inheritance_Relationship
@@ -146,8 +146,8 @@
 	    origin_x   	0
 	    origin_y   	0
 	    items      	(list diagram_item_list
-		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::授课讲师管理::授课讲师管理" @1
-		    location   	(1376, 768)
+		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::授课讲师管理::修改实训师资" @1
+		    location   	(1840, 448)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -159,18 +159,18 @@
 			default_color 	TRUE)
 		    label      	(object ItemLabel
 			Parent_View 	@1
-			location   	(1376, 906)
+			location   	(1840, 586)
 			anchor_loc 	1
 			nlines     	2
 			max_width  	630
 			justify    	0
-			label      	"授课讲师管理")
+			label      	"修改实训师资")
 		    icon_style 	"Icon"
 		    line_color 	3342489
 		    fill_color 	13434879
-		    quidu      	"5EEDBEA0002A")
-		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::课程资源管理::课程资源管理" @2
-		    location   	(1408, 1232)
+		    quidu      	"5EEDBCDB01E6")
+		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::授课讲师管理::培训师资" @2
+		    location   	(1040, 464)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -182,18 +182,18 @@
 			default_color 	TRUE)
 		    label      	(object ItemLabel
 			Parent_View 	@2
-			location   	(1408, 1370)
+			location   	(1040, 602)
 			anchor_loc 	1
 			nlines     	2
 			max_width  	630
 			justify    	0
-			label      	"课程资源管理")
+			label      	"培训师资")
 		    icon_style 	"Icon"
 		    line_color 	3342489
 		    fill_color 	13434879
-		    quidu      	"5EEDBEB101FF")
-		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::授课讲师管理::修改 实训师资" @3
-		    location   	(1872, 368)
+		    quidu      	"5EEDBD1A000D")
+		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::授课讲师管理::创新创业师资" @3
+		    location   	(1376, 336)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -205,18 +205,18 @@
 			default_color 	TRUE)
 		    label      	(object ItemLabel
 			Parent_View 	@3
-			location   	(1872, 506)
+			location   	(1376, 474)
 			anchor_loc 	1
 			nlines     	2
 			max_width  	630
 			justify    	0
-			label      	"修改 实训师资")
+			label      	"创新创业师资")
 		    icon_style 	"Icon"
 		    line_color 	3342489
 		    fill_color 	13434879
-		    quidu      	"5EEDBCDB01E6")
-		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::授课讲师管理::培训师资" @4
-		    location   	(1024, 336)
+		    quidu      	"5EEDBD28002D")
+		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::授课讲师管理::授课讲师管理" @4
+		    location   	(1376, 768)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -228,18 +228,18 @@
 			default_color 	TRUE)
 		    label      	(object ItemLabel
 			Parent_View 	@4
-			location   	(1024, 474)
+			location   	(1376, 906)
 			anchor_loc 	1
 			nlines     	2
 			max_width  	630
 			justify    	0
-			label      	"培训师资")
+			label      	"授课讲师管理")
 		    icon_style 	"Icon"
 		    line_color 	3342489
 		    fill_color 	13434879
-		    quidu      	"5EEDBD1A000D")
-		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::授课讲师管理::创新创业师资" @5
-		    location   	(1440, 352)
+		    quidu      	"5EEDBEA0002A")
+		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::课程资源管理::课程资源管理" @5
+		    location   	(1392, 1216)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -251,16 +251,16 @@
 			default_color 	TRUE)
 		    label      	(object ItemLabel
 			Parent_View 	@5
-			location   	(1440, 490)
+			location   	(1392, 1354)
 			anchor_loc 	1
 			nlines     	2
 			max_width  	630
 			justify    	0
-			label      	"创新创业师资")
+			label      	"课程资源管理")
 		    icon_style 	"Icon"
 		    line_color 	3342489
 		    fill_color 	13434879
-		    quidu      	"5EEDBD28002D")
+		    quidu      	"5EEDBEB101FF")
 		(object ClassView "Class" "Use Case View::系统用例模型::Actors::管理员" @6
 		    ShowCompartmentStereotypes 	TRUE
 		    IncludeAttribute 	TRUE
@@ -280,7 +280,7 @@
 			location   	(640, 1184)
 			anchor_loc 	1
 			nlines     	2
-			max_width  	331
+			max_width  	325
 			justify    	0
 			label      	"管理员")
 		    icon       	"Actor"
@@ -311,7 +311,7 @@
 			    line_color 	3342489
 			    quidu      	"5EEDBEC00155"
 			    client     	@7
-			    supplier   	@1
+			    supplier   	@4
 			    vertices   	(list Points
 				(980, 901)
 				(1264, 803))
@@ -329,7 +329,7 @@
 				(697, 1000))
 			    line_style 	0)))
 		(object AssociationViewNew "$UNNAMED$12" @10
-		    location   	(997, 1118)
+		    location   	(989, 1111)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -345,70 +345,70 @@
 		    roleview_list 	(list RoleViews
 			(object RoleView "$UNNAMED$13" @11
 			    Parent_View 	@10
-			    location   	(517, 542)
+			    location   	(509, 535)
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5EEDBECD0101"
 			    client     	@10
-			    supplier   	@2
+			    supplier   	@5
 			    vertices   	(list Points
-				(997, 1118)
-				(1297, 1200))
+				(989, 1111)
+				(1281, 1186))
 			    line_style 	0)
 			(object RoleView "$UNNAMED$14" @12
 			    Parent_View 	@10
-			    location   	(517, 542)
+			    location   	(509, 535)
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5EEDBECD0103"
 			    client     	@10
 			    supplier   	@6
 			    vertices   	(list Points
-				(997, 1118)
-				(697, 1037))
+				(989, 1111)
+				(697, 1036))
 			    line_style 	0)))
 		(object InheritView "" @13
 		    stereotype 	TRUE
 		    line_color 	3342489
 		    quidu      	"5EEDBF23004E"
-		    client     	@4
-		    supplier   	@1
+		    client     	@2
+		    supplier   	@4
 		    vertices   	(list Points
-			(1104, 435)
-			(1328, 710))
+			(1120, 536)
+			(1310, 710))
 		    line_style 	0)
 		(object InheritView "" @14
 		    stereotype 	TRUE
 		    line_color 	3342489
 		    quidu      	"5EEDBF280363"
-		    client     	@5
-		    supplier   	@1
+		    client     	@3
+		    supplier   	@4
 		    vertices   	(list Points
-			(1405, 557)
-			(1382, 709))
+			(1376, 541)
+			(1376, 710))
 		    line_style 	0)
 		(object InheritView "" @15
 		    stereotype 	TRUE
 		    line_color 	3342489
 		    quidu      	"5EEDBF2F0161"
-		    client     	@3
-		    supplier   	@1
+		    client     	@1
+		    supplier   	@4
 		    vertices   	(list Points
-			(1749, 466)
-			(1444, 710))
+			(1717, 530)
+			(1456, 708))
 		    line_style 	0)
 		(object InheritView "" @16
 		    stereotype 	TRUE
 		    line_color 	3342489
 		    quidu      	"5EEDBF940363"
-		    client     	@1
-		    supplier   	@2
+		    client     	@4
+		    supplier   	@5
 		    vertices   	(list Points
-			(1388, 973)
-			(1401, 1173))
+			(1382, 973)
+			(1388, 1157))
 		    line_style 	0)
 		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::课程资源管理::上传公开课程" @17
-		    location   	(912, 1760)
+		    location   	(960, 1616)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -420,7 +420,7 @@
 			default_color 	TRUE)
 		    label      	(object ItemLabel
 			Parent_View 	@17
-			location   	(912, 1898)
+			location   	(960, 1754)
 			anchor_loc 	1
 			nlines     	2
 			max_width  	630
@@ -431,7 +431,7 @@
 		    fill_color 	13434879
 		    quidu      	"5EEDBFAF015E")
 		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::课程资源管理::实习实训课程" @18
-		    location   	(1408, 1728)
+		    location   	(1392, 1728)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -443,7 +443,7 @@
 			default_color 	TRUE)
 		    label      	(object ItemLabel
 			Parent_View 	@18
-			location   	(1408, 1866)
+			location   	(1392, 1866)
 			anchor_loc 	1
 			nlines     	2
 			max_width  	630
@@ -454,7 +454,7 @@
 		    fill_color 	13434879
 		    quidu      	"5EEDBFC103BE")
 		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统::课程资源管理::培训课程资源" @19
-		    location   	(1952, 1712)
+		    location   	(1920, 1584)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -466,7 +466,7 @@
 			default_color 	TRUE)
 		    label      	(object ItemLabel
 			Parent_View 	@19
-			location   	(1952, 1850)
+			location   	(1920, 1722)
 			anchor_loc 	1
 			nlines     	2
 			max_width  	630
@@ -481,28 +481,28 @@
 		    line_color 	3342489
 		    quidu      	"5EEDBFEC0311"
 		    client     	@17
-		    supplier   	@2
+		    supplier   	@5
 		    vertices   	(list Points
-			(963, 1702)
-			(1290, 1357))
+			(1018, 1558)
+			(1274, 1324))
 		    line_style 	0)
 		(object InheritView "" @21
 		    stereotype 	TRUE
 		    line_color 	3342489
 		    quidu      	"5EEDBFF0027E"
 		    client     	@18
-		    supplier   	@2
+		    supplier   	@5
 		    vertices   	(list Points
-			(1408, 1669)
-			(1408, 1437))
+			(1392, 1670)
+			(1392, 1421))
 		    line_style 	0)
 		(object InheritView "" @22
 		    stereotype 	TRUE
 		    line_color 	3342489
 		    quidu      	"5EEDBFF30271"
 		    client     	@19
-		    supplier   	@2
+		    supplier   	@5
 		    vertices   	(list Points
-			(1886, 1654)
-			(1525, 1334))
+			(1836, 1525)
+			(1509, 1297))
 		    line_style 	0)))))

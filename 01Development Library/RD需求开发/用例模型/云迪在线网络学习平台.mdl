@@ -1484,7 +1484,7 @@
 			    (object Class_Category "资源管理子系统"
 				is_unit    	TRUE
 				is_loaded  	FALSE
-				file_name  	"D:\\2020实训\\20200618\\资源管理.cat"
+				file_name  	"D:\\云迪在线网络学习平台\\01Development Library\\RD需求开发\\资源管理子系统.cat"
 				quid       	"5EEB22AD020D")
 			    (object Class_Category "知识管理子系统"
 				is_unit    	TRUE
