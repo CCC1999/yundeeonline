@@ -12,7 +12,15 @@
 	(object Visibility_Relationship
 	    quid       	"5EEC79840022"
 	    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台"
-	    quidu      	"5EEACC3B0144"))
+	    quidu      	"5EEACC3B0144")
+	(object Visibility_Relationship
+	    quid       	"5EEDAC9E0271"
+	    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::基础数据管理子系统"
+	    quidu      	"5EEACC4D008A")
+	(object Visibility_Relationship
+	    quid       	"5EEDACD0020C"
+	    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::资源管理子系统"
+	    quidu      	"5EEB22AD020D"))
     exportControl 	"Public"
     logical_models 	(list unit_reference_list
 	(object Class_Category "公开课展示列表"
@@ -161,7 +169,7 @@
 				    supplier   	@1
 				    vertices   	(list Points
 					(520, 457)
-					(768, 336))
+					(631, 403))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$2" @6
 				    Parent_View 	@4
@@ -173,7 +181,7 @@
 				    supplier   	@3
 				    vertices   	(list Points
 					(520, 457)
-					(409, 510))
+					(409, 512))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$3" @7
 			    location   	(517, 624)
@@ -200,7 +208,7 @@
 				    supplier   	@2
 				    vertices   	(list Points
 					(517, 624)
-					(627, 678))
+					(625, 678))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$5" @9
 				    Parent_View 	@7
@@ -397,7 +405,7 @@
 				    supplier   	@10
 				    vertices   	(list Points
 					(374, 612)
-					(656, 480))
+					(500, 553))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$8" @16
 				    Parent_View 	@14
@@ -409,7 +417,7 @@
 				    supplier   	@13
 				    vertices   	(list Points
 					(374, 612)
-					(249, 670))
+					(249, 672))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$9" @17
 			    location   	(421, 722)
@@ -436,7 +444,7 @@
 				    supplier   	@11
 				    vertices   	(list Points
 					(421, 722)
-					(594, 738))
+					(593, 738))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$11" @19
 				    Parent_View 	@17
@@ -475,7 +483,7 @@
 				    supplier   	@12
 				    vertices   	(list Points
 					(437, 812)
-					(625, 893))
+					(626, 895))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$14" @22
 				    Parent_View 	@20
@@ -487,7 +495,7 @@
 				    supplier   	@13
 				    vertices   	(list Points
 					(437, 812)
-					(249, 728))
+					(249, 729))
 				    line_style 	0)))))))
 	(object Class_Category "公开课选课"
 	    quid       	"5EEC95E400D1"
@@ -672,7 +680,7 @@
 				    supplier   	@23
 				    vertices   	(list Points
 					(589, 497)
-					(785, 451))
+					(786, 453))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$17" @29
 				    Parent_View 	@27
@@ -684,7 +692,7 @@
 				    supplier   	@26
 				    vertices   	(list Points
 					(589, 497)
-					(393, 543))
+					(393, 542))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$18" @30
 			    location   	(565, 672)
@@ -711,7 +719,7 @@
 				    supplier   	@24
 				    vertices   	(list Points
 					(565, 672)
-					(739, 758))
+					(737, 758))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$20" @32
 				    Parent_View 	@30
@@ -726,7 +734,7 @@
 					(393, 587))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$21" @33
-			    location   	(517, 834)
+			    location   	(534, 861)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -742,26 +750,26 @@
 			    roleview_list 	(list RoleViews
 				(object RoleView "$UNNAMED$22" @34
 				    Parent_View 	@33
-				    location   	(181, 274)
+				    location   	(198, 301)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEC98EE0210"
 				    client     	@33
 				    supplier   	@25
 				    vertices   	(list Points
-					(517, 834)
-					(648, 1030))
+					(534, 861)
+					(647, 1030))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$23" @35
 				    Parent_View 	@33
-				    location   	(181, 274)
+				    location   	(198, 301)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEC98EE0213"
 				    client     	@33
 				    supplier   	@26
 				    vertices   	(list Points
-					(517, 834)
+					(534, 861)
 					(422, 692))
 				    line_style 	0)))))))
 	(object Class_Category "我的课程"
@@ -885,7 +893,7 @@
 				    supplier   	@36
 				    vertices   	(list Points
 					(437, 758)
-					(625, 752))
+					(626, 753))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$29" @40
 				    Parent_View 	@38
@@ -1003,7 +1011,7 @@
 				    supplier   	@41
 				    vertices   	(list Points
 					(653, 487)
-					(849, 459))
+					(850, 460))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$32" @45
 				    Parent_View 	@43
@@ -1015,7 +1023,7 @@
 				    supplier   	@42
 				    vertices   	(list Points
 					(653, 487)
-					(457, 516))
+					(457, 515))
 				    line_style 	0))))))))
     logical_presentations 	(list unit_reference_list
 	(object UseCaseDiagram "公开课管理子系统"

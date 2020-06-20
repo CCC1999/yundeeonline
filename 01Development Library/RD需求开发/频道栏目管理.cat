@@ -12,7 +12,11 @@
 	(object Visibility_Relationship
 	    quid       	"5EEC8CFB0074"
 	    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::内容管理"
-	    quidu      	"5EEB23550031"))
+	    quidu      	"5EEB23550031")
+	(object Visibility_Relationship
+	    quid       	"5EEDADFE03A2"
+	    supplier   	"Use Case View::系统用例模型::云迪在线网络学习平台::基础数据管理子系统"
+	    quidu      	"5EEACC4D008A"))
     exportControl 	"Public"
     logical_models 	(list unit_reference_list
 	(object UseCase "频道栏目管理"
@@ -60,7 +64,31 @@
 	    origin_x   	0
 	    origin_y   	0
 	    items      	(list diagram_item_list
-		(object ClassView "Class" "Use Case View::系统用例模型::Actors::管理员" @1
+		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::频道栏目管理::频道栏目管理" @1
+		    location   	(1008, 560)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(1008, 698)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	630
+			justify    	0
+			label      	"频道栏目管理")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEC8A360399"
+		    height     	118)
+		(object ClassView "Class" "Use Case View::系统用例模型::Actors::管理员" @2
 		    ShowCompartmentStereotypes 	TRUE
 		    IncludeAttribute 	TRUE
 		    IncludeOperation 	TRUE
@@ -75,11 +103,11 @@
 			color      	0
 			default_color 	TRUE)
 		    label      	(object ItemLabel
-			Parent_View 	@1
+			Parent_View 	@2
 			location   	(544, 720)
 			anchor_loc 	1
 			nlines     	2
-			max_width  	335
+			max_width  	325
 			justify    	0
 			label      	"管理员")
 		    icon       	"Actor"
@@ -88,30 +116,6 @@
 		    quidu      	"5EEACB8D01E8"
 		    annotation 	8
 		    autoResize 	TRUE)
-		(object UseCaseView "Use Case View::系统用例模型::云迪在线网络学习平台::频道栏目管理::频道栏目管理" @2
-		    location   	(1008, 560)
-		    font       	(object Font
-			size       	9
-			face       	"Arial"
-			bold       	FALSE
-			italics    	FALSE
-			underline  	FALSE
-			strike     	FALSE
-			color      	0
-			default_color 	TRUE)
-		    label      	(object ItemLabel
-			Parent_View 	@2
-			location   	(1008, 698)
-			anchor_loc 	1
-			nlines     	2
-			max_width  	630
-			justify    	0
-			label      	"频道栏目管理")
-		    icon_style 	"Icon"
-		    line_color 	3342489
-		    fill_color 	13434879
-		    quidu      	"5EEC8A360399"
-		    height     	118)
 		(object AssociationViewNew "$UNNAMED$0" @3
 		    location   	(749, 560)
 		    font       	(object Font
@@ -134,7 +138,7 @@
 			    line_color 	3342489
 			    quidu      	"5EEC8A3F029C"
 			    client     	@3
-			    supplier   	@2
+			    supplier   	@1
 			    vertices   	(list Points
 				(749, 560)
 				(898, 560))
@@ -146,7 +150,7 @@
 			    line_color 	3342489
 			    quidu      	"5EEC8A3F02A0"
 			    client     	@3
-			    supplier   	@1
+			    supplier   	@2
 			    vertices   	(list Points
 				(749, 560)
 				(601, 560))
@@ -228,7 +232,7 @@
 		    line_color 	3342489
 		    quidu      	"5EEC8B1D0395"
 		    client     	@8
-		    supplier   	@2
+		    supplier   	@1
 		    vertices   	(list Points
 			(1346, 560)
 			(1116, 560))
@@ -238,7 +242,7 @@
 		    line_color 	3342489
 		    quidu      	"5EEC8B20001C"
 		    client     	@6
-		    supplier   	@2
+		    supplier   	@1
 		    vertices   	(list Points
 			(1008, 820)
 			(1008, 721))
@@ -248,7 +252,7 @@
 		    line_color 	3342489
 		    quidu      	"5EEC8B21035E"
 		    client     	@7
-		    supplier   	@2
+		    supplier   	@1
 		    vertices   	(list Points
 			(1008, 369)
 			(1008, 501))
