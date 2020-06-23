@@ -1517,7 +1517,7 @@
 			    (object Class_Category "频道栏目管理"
 				is_unit    	TRUE
 				is_loaded  	FALSE
-				file_name  	"C:\\Users\\lenovo\\Documents\\GitHub\\yundeeonline\\01Development Library\\RD需求开发\\用例模型\\频道栏目管理.cat"
+				file_name  	"D:\\2020实训\\18组\\先启\\RD需求开发\\频道栏目管理.cat"
 				quid       	"5EEB23640030")
 			    (object Class_Category "互动交流"
 				quid       	"5EEB239600D3"
@@ -7006,7 +7006,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	"")
+			value      	".;D:\\JAVA\\jdk1.8.0_161\\lib\\dt.jar;D:\\JAVA\\jdk1.8.0_161\\lib\\tools.jar;")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
