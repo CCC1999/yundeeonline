@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <label>
+  	
+  </label>
+  <label for="textfield">姓名</label>
+  <input type="text" name="textfield" id="textfield"  tabindex="1"/>
+  <label></label>
+  <label></label>
+  <label></label>
+  <label for="label">登录名</label>
+  <input type="text" name="textfield2" tabindex="2" id="label" />
+  <label>人员状态
+  <select name="select" tabindex="3">
+    <option value="0" selected="selected">
+    <option value="1">启用</option>
+    <option value="2">停用</option>
+    </option>
+  </select>
+  </label>
+  <label>人员角色
+  <select name="select2" tabindex="4">
+    <option value="0" selected="selected">
+    <option value="1">管理员</option>
+    <option value="2">学员</option>
+    </option>
+  </select>
+  </label>
+  <input type="submit" name="Submit" value="查询" tabindex="5" />  
+</form>
+<p>&nbsp;</p>
+<table width="400" border="1" cellpadding="0" cellspacing="0">
+  <tr>
+    <th align="center">ID</th>
+    <th align="center">姓名</th>
+    <th align="center">操作</th>
+  </tr>
+  <tr>
+    <td align="center">HD1001</td>
+    <td align="center">张三</td>
+    <td align="center"><input type="submit" name="Submit2" value="修改角色" /></td>
+  </tr>
+  <tr>
+    <td align="center">HD1002</td>
+    <td align="center">李四</td>
+    <td align="center"><input type="submit" name="Submit22" value="修改角色" /></td>
+  </tr>
+</table>
+ <p>&nbsp;</p>
+<form id="form2" name="form2" method="post" action="">
+   <table width="390" border="1" cellpadding="0" cellspacing="0">
+     <tr>
+       <td width="130"><input type="checkbox" name="checkbox" value="checkbox" id="checkbox"  checked="checked"/>
+           <label for="checkbox">教师</label></td>
+       <td width="122"><input type="checkbox" name="checkbox6" value="checkbox" id="checkbox6" />
+         学员
+         <label for="checkbox6"></label></td>
+       <td width="130"><input type="checkbox" name="checkbox7" value="checkbox" id="checkbox7" checked="checked"/>
+           <label for="checkbox7">管理员</label></td>
+     </tr>
+     <tr>
+       <td><input type="checkbox" name="checkbox2" value="checkbox" id="checkbox2" />
+           <label for="checkbox2">方案管理员</label></td>
+       <td><input type="checkbox" name="checkbox5" value="checkbox" id="checkbox5" />
+           <label for="checkbox5">IT人员</label></td>
+       <td><input type="checkbox" name="checkbox8" value="checkbox" id="checkbox8" />
+           <label for="checkbox8">考试管理员</label></td>
+     </tr>
+     <tr>
+       <td><input type="checkbox" name="checkbox3" value="checkbox" id="checkbox3" />
+           <label for="checkbox3">试题库管理员</label></td>
+       <td><input type="checkbox" name="checkbox4" value="checkbox" id="checkbox4" />
+           <label for="checkbox4">知识管理员</label></td>
+       <td><input type="checkbox" name="checkbox9" value="checkbox" id="checkbox9" />
+           <label for="checkbox9">问题库管理员</label></td>
+     </tr>
+   </table>
+  <p>
+    <input type="submit" name="Submit3" value="保存" />
+  </p>
+ </form>
+ <p>&nbsp;</p>
+</body>
+</html>
